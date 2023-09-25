@@ -6,5 +6,5 @@
 -cambiar el dropdwn de novedades
 -animaciones en js 
 -cuando se ponga el mouse cambiar imagen
--Contactenos(formulario/mapa)
+-Contactenos(formulario/mapa): imagen, formulario, tarjetas para contactar y mapa
 

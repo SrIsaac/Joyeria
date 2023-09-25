@@ -1,6 +1,7 @@
 
 .categorias{
-    width: 25vw;
+    /* acomdar con responsive */
+    width: 30%;
 }
 
 
@@ -82,3 +83,17 @@
     border-radius: 20px;
     margin-left: 10px;
 }
+
+.section-products {
+    /* acomdar con responsive 540 */
+    /* width: 70%; */
+    /* display: flex;
+    align-items: center; */
+    border-left: 1.5px solid #dd910f;
+    margin-left: 10px;
+}
+/*
+.categorias{
+    acomdar con responsive 540
+    width: 30%;
+} */
