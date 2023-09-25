@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
 }
 
 html {
@@ -318,15 +320,13 @@ p{
 
 .conteiner-products{margin-top: 32px}
 
-.conteiner-products img{width: 190px;}
+.conteiner-products img{width: 190px; height: 174px}
 
-.conteiner-products p{font-size: 20px;}
+.conteiner-products, .content-text p{font-size: 15px;}
 
 .cont-img{height: 20rem;}
 
-.cont-text{
-    text-align: center;
-}
+
 /*================end_Section_producto========================*/
 
 /*================Section_final========================*/
@@ -368,7 +368,7 @@ p{
    justify-content: center;
 }
 
-.footer-logo img{width: 14rem;}
+.footer-logo img{width: 14rem;margin: 2.5vw 0;}
 
 .content-text{
    display: flex;
@@ -556,15 +556,13 @@ p{
 
 .conteiner-products{margin-top: 36px}
 
-.conteiner-products img{width: 190px;}
+.conteiner-products img{width: 190px; height: 174px}
 
-.conteiner-products p{font-size: 20px;}
+.conteiner-products, .content-text p{font-size: 15px;}
 
 .cont-img{height: 20rem;}
 
-.cont-text{
-    text-align: center;
-}
+
 /*================end_Section_producto========================*/
 
 /*================Section_final========================*/
@@ -606,7 +604,7 @@ p{
    justify-content: center;
 }
 
-.footer-logo img{width: 14rem;}
+.footer-logo img{width: 14rem;margin: 2.5vw 0;}
 
 .content-text{
    display: flex;
@@ -719,7 +717,6 @@ p{
     .Productos {
       flex-direction: row;
       justify-content: center;
-      gap: 30px;
     }
 
 /*================end_Section_producto====================*/
@@ -812,9 +809,6 @@ p{
 /*================Section_carrusel========================*/
 
 /*================Section_producto========================*/
-    .Productos {
-        gap: 50px;
-    }
 
 /*================end_Section_producto====================*/
 
@@ -862,9 +856,7 @@ p{
 /*================Section_carrusel========================*/
 
 /*================Section_producto========================*/
-.Productos {
-    gap: 100px;
-  }
+
 
 /*================end_Section_producto====================*/
 

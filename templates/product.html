@@ -2,10 +2,319 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/styles/styleP.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>HOlaaaaaa</h1>
+    <header class="main-header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Productos</a>
+            <a href="#">Novedades</a>
+        </div>
+        <nav class="main-navbar">
+            <div class="navbar-content">
+                <div class="sidenav-container">
+                    <span class="mobile-sidenav" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="image-container">
+                    <a href="./index.html"><img src="../static/imagenes/logo.png" alt="main-logo"></a>
+                </div>
+                <div class="navbar-main-menu">
+                    <ul class="style-ui-text">
+                        <li>
+                            <a href="./product.html">
+                                <button class="dropbtn style-ui-text">Productos</button>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">link 1</a>
+                                <a href="#">link 1</a>
+                                <a href="#">link 1</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="dropbtn style-ui-text">Novedades</button>
+                            <div class="dropdown-content">
+                                <a href="#">link 1</a>
+                                <a href="#">link 1</a>
+                                <a href="#">link 1</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-search-one">
+                    <input type="text" placeholder="Buscar...">
+                </div> 
+                <div class="navbar-icons">
+                    <div class="container-icon-car">
+                        <div class="navbar-icons-car">
+                            <a href="#"><img src="../static/imagenes/Carrito-removebg-preview.png" alt="carrito-de-compras"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="main-section">
+        <div class="categorias">
+            <div class="categorias-content">
+                <h2>Categorias</h2>
+                <ul>
+                    <li>Anillos</li>
+                    <li>Pulseras</li>  
+                    <li>Collares</li>
+                    <li>Dijes</li>
+                    <li>Brazaletes</li>
+                    <li>Relojes</li>       
+                </ul>
+            </div>
+        </div>
+        <div class="section-products">
+            <div class="Productos">
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/anillo_1.jpg" alt="anillo-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/pulsera_1.jpg" alt="pulsera-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/Collar_1.jpg" alt="collar-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/Collar_1.jpg" alt="collar-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/Collar_1.jpg" alt="collar-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/Collar_1.jpg" alt="collar-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/Collar_1.jpg" alt="collar-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/Collar_1.jpg" alt="collar-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/pulsera_1.jpg" alt="pulsera-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/pulsera_1.jpg" alt="pulsera-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/pulsera_1.jpg" alt="pulsera-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="conteiner-products">
+                    <a href="#">
+                        <div class="cont-img">
+                            <img src="../static/imagenes/pulsera_1.jpg" alt="pulsera-oro">
+                        </div>
+                        <div class="card-conteiner">
+                            <div class="cont-text">
+                                <p>Cadena de Oro</p>
+                                <p>$XXXXXX</p> 
+                            </div>
+                            <div class="btnCarrito">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-logo">
+            <img src="../static/imagenes/logo.png" alt="logo">
+        </div>
+        <div class="footer-conteiner-text">
+            <div class="content-text">
+                <div class="text-one">
+                    <h3>
+                        Atencion al cliente
+                    </h3>
+                    <div class="text-info-one">
+                        <p>
+                            -Hora de atencion 8:00 AM a 6 PM <br>
+                            -Envios
+                        </p>
+                    </div>
+                </div>
+                <div class="text-two">
+                    <h3>
+                        Sobre nosotros
+                    </h3>
+                    <div class="text-info-two">
+                        <p>
+                            -Historia <br>
+                            -Cultura coorporativa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-info">
+            <div class="info-direction">
+                <img src="../static/imagenes/Direcc (2).png" alt="direccion">
+                <p>Calle XX Numero XX-XX</p>
+            </div>
+            <div class="info-networks">
+                <div class="networks-one">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../static/imagenes/instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../static/imagenes/facebook-removebg-preview.png" alt="facebook"></a>
+                </div>
+                <div class="networks-two">
+                    <a href="https://twitter.com/" target="_blank"><img src="../static/imagenes/twitter-removebg-preview.png" alt="twitter"></a>
+                    <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../static/imagenes/WhatsApp.png" alt="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

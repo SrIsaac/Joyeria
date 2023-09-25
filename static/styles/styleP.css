@@ -1,0 +1,84 @@
+
+.categorias{
+    width: 25vw;
+}
+
+
+.categorias-content h2{
+    font-size: 3rem;
+    border-bottom: 1px solid #c08d3e;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 0.5vw;
+    font-weight: 400;
+}
+
+.main-section{
+    display: flex;
+    margin-bottom: 5vw;
+}
+
+.categorias-content{
+    font-size: 1.5rem;
+    list-style-type:none
+}
+
+.categorias-content li{
+    margin-bottom: 15px;
+    width: 20px;
+    margin-left: 0.5vw;
+}
+
+
+.categorias-content li:hover{
+    border-bottom: 1px solid #c08d3e;
+    width: 125px;
+    transition: width 1s;
+    cursor: pointer;
+
+}
+
+.cont-text p{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnCarrito{
+    display: flex;
+    align-items: center;
+    
+}
+
+.card-conteiner{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+
+.btnCarrito p{
+    padding: 10px 22px;
+    background-color:#be8c36;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.cont-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-text p:nth-child(1){
+    color: #be8c36;
+}
+
+
+.btnCarrito p:hover{
+    padding: 10px 22px;
+    background-color:#dd910f;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
