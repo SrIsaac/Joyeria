@@ -1,0 +1,58 @@
+input{
+    padding: 3.1px;
+    border-radius: 5px;
+    border: 1.5px solid ;
+}
+textarea{
+    resize: none;
+    color:black;
+    border-radius: 5px;
+    border: 1.5px solid ;
+}
+button{
+    background: white;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+.conteiner-product{
+    padding: 10px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    border: solid 1px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+
+@media (min-width:540px){
+    .image img{
+        width:100%
+    }
+    .section-map{
+        width:100%
+    }
+    .map iframe{
+        width: 50%;
+        height: 50%;
+    }
+
+}
+@media (max-width:540px){
+    .image img{
+        width:100%
+    }
+    .section-map{
+        width:100%
+    }
+    .map iframe{
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (min-width:720px){}
+@media (min-width:992px){}
+@media (min-width:1024px){}
+@media (min-width:1200px){}
