@@ -246,8 +246,6 @@ p{
         justify-content: center;
     }
 
-    .navbar-search-one{display: none;}
-
     .navbar-icons-car{
         display: flex;
         justify-content: center;
@@ -260,31 +258,6 @@ p{
     }
 
 /*========================end_header========================*/
-
-/*================Section_search========================*/
-
-.section-search{
- width: 100%;
-}
-
-.navbar-search-two{
-    display: flex;
-    justify-content: center;
-    background: #0c0c0c;
-}
-
-.navbar-search-two input{
-    width: 240px;
-    height: 25px;
-    padding: 0 20px;
-    font-size: 1.5rem;
-    color: #000;
-    outline: none;
-    border: 1px silver;
-    border-radius: 30px;
-}
-
-/*================End_Section_search====================*/
 
 /*================Section_carrusel========================*/
 
@@ -481,8 +454,6 @@ p{
         justify-content: center;
     }
 
-    .navbar-search-one{display: none;}
-
     .navbar-icons-car{
         display: flex;
         justify-content: center;
@@ -495,31 +466,6 @@ p{
     }
 
 /*========================end_header========================*/
-
-/*================Section_search========================*/
-
-.section-search{
-    width: 100%;
-}
-   
-.navbar-search-two{
-    display: flex;
-    justify-content: center;
-    background: #0c0c0c;
-}
-   
-.navbar-search-two input{
-    width: 240px;
-    height: 25px;
-    padding: 0 20px;
-    font-size: 1.5rem;
-    color: #000;
-    outline: none;
-    border: 1px silver;
-    border-radius: 30px;
-}
-   
-/*================End_Section_search====================*/
 
 /*================Section_carrusel========================*/
 
@@ -769,24 +715,6 @@ p{
     width: 45vw;
 }
 
-.navbar-search-one{
-    width: 28vw; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-search-one input{
-    width: 190px;
-    height: 30px;
-    padding: 0px 15px;
-    font-size: 18px;
-    color: #000;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 30px;
-}
-
 .navbar-icons{
     width: 7vw;
     justify-content: center;
@@ -825,10 +753,6 @@ p{
 }
 @media (min-width:1024px){
 /*========================header========================*/
-
-    .navbar-search-one{
-        justify-content: flex-end;
-    }
 
 /*========================end_header====================*/
 
