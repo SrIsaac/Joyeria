@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
             this.numero=numero;
             this.correo=correo;
             this.mensaje=mensaje;
-                    
+
     }
+
+    
 
 // ------------Alertas de el formulario -----------------------
     function mostrarAlerta(mensaje,className) {
@@ -34,14 +36,23 @@ document.addEventListener("DOMContentLoaded", function () {
 // -----------Ingreso de datos al localstorage------------------
 
     function traerInfo(){
-
+        let info;
+        if(localStorage.getItem('Datos') === null){
+            info=[];
+        }else{
+            info=JSON.parse(localStorage.getItem('Datos'));
+        }
+        return info;
     }
 
     function agregarInfo(form){
-        
+        const Informacion = traerInfo();
+        Informacion.push(form);
+        localStorage.setItem('Datos',JSON.stringify(Informacion) )
     }
 
 //----------evento----------------------
+
     ButtonEnviar.addEventListener('click',(e)=>{
         e.preventDefault();
         
@@ -50,15 +61,29 @@ document.addEventListener("DOMContentLoaded", function () {
         const inputCorreo=document.querySelector("#correo").value;
         const inputMensaje=document.querySelector("#mensaje").value;
         
-        if(inputNombre === '' || inputNumero === '' || inputCorreo === ''|| inputMensaje === ''){
-            mostrarAlerta('Completar todos los campos','danger');
-        }else{
-            const form= new formulario(inputNombre,inputNumero,inputCorreo,inputMensaje,);
-            console.log(form);
-            agregarInfo(form);
-            mostrarAlerta('Informacion enviada correctamente','success');
-            limpiarCampos();
-        }
-    })
+        
+            if(inputNombre === '' || inputNumero === '' || inputCorreo === ''|| inputMensaje === '' ){
+                    mostrarAlerta('Completar todos los campos','danger');           
+                }else if(!validateEmail()){
+                    mostrarAlerta('Correo Incorrecto...','danger');
+                }else{
+                    const form= new formulario(inputNombre,inputNumero,inputCorreo,inputMensaje,);
+                    agregarInfo(form);
+                    mostrarAlerta('Informacion enviada correctamente','success');
+                    limpiarCampos();
+                }    
+    });
 
+    function validateEmail(){
+                
+        const inputCorreo=document.getElementById("correo");
+        
+        var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    
+        if( validEmail.test(inputCorreo.value) ){
+            return true;
+        }else{
+            return false;
+        }
+    }
 });
