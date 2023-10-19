@@ -157,16 +157,15 @@ p {
     background-color: white;
     min-width: 16rem;
     z-index: 1;
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
     color: black;
-
-
+    border: solid 2px #c08d3e;
 }
 
 
 .carrito-content tr{
-    width: 25vw;
+    width: 30vw;
     display: flex;
     justify-content: space-around;
 
@@ -174,6 +173,7 @@ p {
 .carrito-content th{
     font-size: 1.4rem;
     margin-top: 1vw;
+    border-bottom: solid 2.5px #c08d3e;
 }
 
 
@@ -361,9 +361,9 @@ p {
         font-size: 15px;
     }
 
-    .cont-img {
+    /* .cont-img {
         height: 20rem;
-    }
+    } */
 
 
     /*================end_Section_producto========================*/
@@ -585,9 +585,9 @@ p {
         font-size: 15px;
     }
 
-    .cont-img {
+    /* .cont-img {
         height: 20rem;
-    }
+    } */
 
 
     /*================end_Section_producto========================*/

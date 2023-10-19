@@ -86,6 +86,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.cont-img img{
+  width: 175px;
+  height: 175px;
+}
+
 .cont-text{
     display: flex;
     flex-direction: column;
@@ -397,11 +403,6 @@ a {
       
   }
   
-  .cont-img{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
   .cont-text{
       display: flex;
       flex-direction: column;
