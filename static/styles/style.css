@@ -161,6 +161,8 @@ p {
     height: 30vw;
     color: black;
     border: solid 2px #c08d3e;
+    right: 11%;
+    top: 14%;
 }
 
 
@@ -174,6 +176,10 @@ p {
     font-size: 1.4rem;
     margin-top: 1vw;
     border-bottom: solid 2.5px #c08d3e;
+}
+
+.carrito-push{
+    margin-left: 25vw;
 }
 
 

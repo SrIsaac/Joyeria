@@ -28,11 +28,6 @@
                             <a href="./product.html">
                                 <button class="dropbtn style-ui-text">Productos</button>
                             </a>
-                            <div class="dropdown-content">
-                                <a href="#">link 1</a>
-                                <a href="#">link 1</a>
-                                <a href="#">link 1</a>
-                            </div>
                         </li>
                         <li>
                             <a href="contacto.html">
@@ -41,14 +36,32 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-search-one">
-                </div> 
-                <div class="navbar-icons">
-                    <div class="container-icon-car">
-                        <div class="navbar-icons-car">
-                            <img src="../static/imagenes/Carrito-removebg-preview.png" alt="carrito-de-compras">
-                        </div>
-                    </div>
+                <div class="navbar-main-menu">
+                    <ul class="style-ui-text">
+                        <li class="carrito-push">
+                            <div class="carritobtn carrito-imagen ">
+                                <!-- <img src="/static/imagenes/Carrito-removebg-preview.png" alt=""> -->
+                                <i class="bi bi-cart3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="3vw" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <table class="carrito-content">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="libro-list"></tbody>
+                            </table>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -76,7 +89,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Anillo de Plata</p>
                                 <p>$200</p>
                             </div>
                             <div class="button-container-1">
@@ -91,7 +104,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Pulsera de Plata con Diamantes</p>
                                 <p>$150</p> 
                             </div>
                             <div class="button-container-1">
@@ -106,7 +119,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Collar de plata con Esmeralda</p>
                                 <p>$65.00</p> 
                             </div>
                             <div class="button-container-1">
@@ -121,7 +134,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Collar de Oro en Forma de Corazon</p>
                                 <p>$220</p> 
                             </div>
                             <div class="button-container-1">
@@ -136,7 +149,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Reloj Rolex Oro en Color Azul</p>
                                 <p>$800</p> 
                             </div>
                             <div class="button-container-1">
@@ -151,7 +164,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Anillo de Oro con Diamante Incrustado</p>
                                 <p>$59.99</p> 
                             </div>
                             <div class="button-container-1">
@@ -166,7 +179,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Reloj Rolex Oro en Color Negro</p>
                                 <p>$200</p> 
                             </div>
                             <div class="button-container-1">
@@ -181,7 +194,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Cadena de Plata con diamantes</p>
                                 <p>$210</p> 
                             </div>
                             <div class="button-container-1">
@@ -196,7 +209,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Brazalete de Oro</p>
                                 <p>$17.00</p> 
                             </div>
                             <div class="button-container-1">
@@ -211,7 +224,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Anillo de Oro con diamantes Incrustados</p>
                                 <p>$500</p> 
                             </div>
                             <div class="button-container-1">
@@ -226,7 +239,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Pulsera de Oro</p>
                                 <p>$350</p> 
                             </div>
                             <div class="button-container-1">
@@ -241,7 +254,7 @@
                         </div>
                         <div class="card-conteiner">
                             <div class="cont-text">
-                                <p>Cadena de Oro</p>
+                                <p>Dije de Cruz en Plata y Oro</p>
                                 <p>$70</p> 
                             </div>
                             <div class="button-container-1">
@@ -256,7 +269,7 @@
                     </div>
                     <div class="card-conteiner">
                         <div class="cont-text">
-                            <p>Cadena de Oro</p>
+                            <p>Anillo de Plata con Zafiro con Diamantes</p>
                             <p>$27.00</p> 
                         </div>
                         <div class="button-container-1">
@@ -267,11 +280,11 @@
                 </div>
                 <div class="conteiner-productss">
                     <div class="cont-img">
-                        <img src="../static/imagenes/collar3.png" alt="collar">
+                        <img src="../static/imagenes/reloj4.png" alt="collar">
                     </div>
                     <div class="card-conteiner">
                         <div class="cont-text">
-                            <p>Cadena de Oro</p>
+                            <p>Reloj hindenberg Oro color Negro</p>
                             <p>$27.00</p> 
                         </div>
                         <div class="button-container-1">
@@ -286,22 +299,7 @@
                     </div>
                     <div class="card-conteiner">
                         <div class="cont-text">
-                            <p>Cadena de Oro</p>
-                            <p>$27.00</p> 
-                        </div>
-                        <div class="button-container-1">
-                            <span class="mas">Añadir al carrito</span>
-                            <button id='work' type="button" name="Hover">Añadir al carrito</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="conteiner-productss">
-                    <div class="cont-img">
-                        <img src="../static/imagenes/brazalete3.png" alt="pulsera-oro">
-                    </div>
-                    <div class="card-conteiner">
-                        <div class="cont-text">
-                            <p>Cadena de Oro</p>
+                            <p>Brazalete de Plata</p>
                             <p>$27.00</p> 
                         </div>
                         <div class="button-container-1">
@@ -316,8 +314,23 @@
                     </div>
                     <div class="card-conteiner">
                         <div class="cont-text">
-                            <p>Cadena de Oro</p>
+                            <p>Dije de Oro en Forma de Flor</p>
                             <p>$50</p> 
+                        </div>
+                        <div class="button-container-1">
+                            <span class="mas">Añadir al carrito</span>
+                            <button id='work' type="button" name="Hover">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteiner-productss">
+                    <div class="cont-img">
+                        <img src="../static/imagenes/brazalete3.png" alt="pulsera-oro">
+                    </div>
+                    <div class="card-conteiner">
+                        <div class="cont-text">
+                            <p>Brazalete de Oro Tejido</p>
+                            <p>$27.00</p> 
                         </div>
                         <div class="button-container-1">
                             <span class="mas">Añadir al carrito</span>
@@ -331,7 +344,7 @@
                     </div>
                     <div class="card-conteiner">
                         <div class="cont-text">
-                            <p>Cadena de Oro</p>
+                            <p>Huelot Geneve Oro Rosa</p>
                             <p>$27.00</p> 
                         </div>
                         <div class="button-container-1">

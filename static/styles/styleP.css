@@ -105,7 +105,10 @@
     font-size: 1.6rem;
     font-weight: 500;
     text-shadow: 1px 1px #b6b8b8;
-  
+    width: 10vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -115,7 +118,6 @@
     font-weight: 400;
     text-shadow: 1px 1px #b6b8b8;
     color: #000;
-
 }
 
 .btnCarrito p:hover{
