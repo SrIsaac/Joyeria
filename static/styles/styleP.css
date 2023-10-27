@@ -99,7 +99,7 @@
     margin-left: 10px;
 }
 
-.cont-text p:nth-child(1){
+.cont-text h4:nth-child(1){
     color: #be8c36;
     font-family: lato;
     font-size: 1.6rem;
@@ -412,7 +412,7 @@ a {
       margin-left: 10px;
   }
   
-  .cont-text p:nth-child(1){
+  .cont-text h4:nth-child(1){
       color: #be8c36;
       font-family: lato;
       font-size: 1.6rem;

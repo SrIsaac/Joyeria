@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const ButtonEnviar=document.querySelector("#enviar");
+
+
+
     function formulario(nombre,numero,correo,mensaje){
             this.nombre=nombre;
             this.numero=numero;
@@ -8,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.mensaje=mensaje;
 
     }
+
+    
 
     
 
@@ -51,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem('Datos',JSON.stringify(Informacion) )
     }
 
-//----------evento----------------------
+//----------eventos----------------------
 
     ButtonEnviar.addEventListener('click',(e)=>{
         e.preventDefault();
@@ -68,11 +73,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     mostrarAlerta('Correo Incorrecto...','danger');
                 }else{
                     const form= new formulario(inputNombre,inputNumero,inputCorreo,inputMensaje,);
+                    console.log(form);
                     agregarInfo(form);
                     mostrarAlerta('Informacion enviada correctamente','success');
                     limpiarCampos();
                 }    
     });
+
+    
 
     function validateEmail(){
                 
