@@ -1,11 +1,10 @@
-// document.addEventListener("DOMContentLoaded",mostrarProducto())
-document.addEventListener("DOMContentLoaded", function () {
 
 // --------------------------Sacar la informacion de las tarjetas------------------------------
     const listaCursos = document.querySelector(".Productoss")
     const btnborrar= document.querySelector("#product-list")
     
-    listaCursos.addEventListener('click', agregarProducto,);
+    listaCursos.addEventListener('click', agregarProducto);
+    
 
     function agregarProducto(e){
         e.preventDefault();
@@ -23,12 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             precio: precio.slice(1),
             id: Producto.querySelector("button").getAttribute("data-id"),
             cantidad:1
-        }
-
-        const Idvalue= infoPrecio.id;       
-
-        // let id=infoPrecio.find((element)=>element.id === infoPrecio.id)
-
+        }       
         agregarInfo(infoPrecio);   
     }
 
@@ -54,14 +48,26 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function mostrarProducto(){
         const productos= traerInfo();
-        console.log(productos);
         productos.forEach((infoPrecio)=>agregarProductoCarrito(infoPrecio))
+        const elementos = document.querySelectorAll("#product-list > tr .delete")
+        for(let i=0; i<elementos.length; i++){
+            elementos[i].addEventListener('click',(e)=>{
+                const pruebaID= e.target.parentElement.parentElement.id
+                console.log(pruebaID);
+                const prueba = productos.filter((producto)=>producto.id != pruebaID);
+                console.log(prueba);
+                localStorage.setItem('datoProducto', JSON.stringify(prueba));
+                window.location.reload();
+            })
+            
+        }
     }
     
     function agregarProductoCarrito(infoPrecio){
         const lista = document.querySelector("#product-list");
         console.log(lista);
         const fila=document.createElement('tr');
+        fila.id=infoPrecio.id;
         fila.innerHTML=`
         <td><img width="100" src="${infoPrecio.img}"></td>
         <td style="font-size: 1.3rem;">${infoPrecio.nombre}</td>
@@ -79,17 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
             x.parentElement.parentElement.remove()
         }
     }
-    
-    function removerProducto(){
-        
-    }
-
-    console.log();
-    mostrarProducto();
 
     btnborrar.addEventListener('click',(e)=>{
         removerCarrito(e.target);
-        // removerProducto(productoSeleccionado)
-        // console.log(productoSeleccionado);
     })
-});
+
+    mostrarProducto();
+
+
+
+
