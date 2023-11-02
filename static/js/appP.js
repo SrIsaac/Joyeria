@@ -1,4 +1,3 @@
-
 // --------------------------Sacar la informacion de las tarjetas------------------------------
     const listaCursos = document.querySelector(".Productoss")
     const btnborrar= document.querySelector("#product-list")
@@ -21,7 +20,7 @@
         const infoPrecio = {
             img: Producto.querySelector("img").src,
             nombre: Producto.querySelector("h4").textContent,
-            precio: precio.slice(1),
+            precio: parseInt(precio.replace(/[,.$]+/g, '')),//replace sirve para quitar caracteres
             id: Producto.querySelector("button").getAttribute("data-id"),
             cantidad:1
         }       
@@ -40,18 +39,20 @@
         return info;
     }
 
-    function guardarInfo(producto) {
+    function guardarInfo(objeto) {
         const productos = traerInfo();
-        const existe = productos.some(prod => prod.id === producto.id);
+        const existe = productos.some(prod => prod.id === objeto.id);
+        const prodPrincipal=objeto.precio;
         if (existe) {
             productos.forEach(prod => {
-                if (prod.id === producto.id) {
+                if (prod.id === objeto.id) {
                     prod.cantidad++;
-                }
+                    prod.precio=prod.precio+prodPrincipal;
+                }               
             });
         } else {
-            producto.cantidad = 1;
-            productos.push(producto);
+            objeto.cantidad = 1;
+            productos.push(objeto);         
         }
         localStorage.setItem('datoProducto', JSON.stringify(productos));
     }
@@ -102,21 +103,3 @@
     })
 
     mostrarProducto();
-
-
-
-    // function guardarInfo(producto) {
-    //     const productos = traerInfo();
-    //     const existe = productos.some(prod => prod.id === producto.id);
-    //     if (existe) {
-    //         productos.forEach(prod => {
-    //             if (prod.id === producto.id) {
-    //                 prod.cantidad++;
-    //             }
-    //         });
-    //     } else {
-    //         producto.cantidad = 1;
-    //         productos.push(producto);
-    //     }
-    //     localStorage.setItem('datoProducto', JSON.stringify(productos));
-    // }

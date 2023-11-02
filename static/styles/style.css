@@ -62,17 +62,18 @@ p {
 
 .sidenav {
     display: none;
-    width: 35vw;
+    width: 100%;
     height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -35vw;
+    left: -100%;
     background-color: #303030;
     overflow-x: hidden;
     transition: all 0.5s;
     padding-top: 60px;
     z-index: 3;
+    text-align: center;
 }
 
 .sidenav a {
@@ -304,7 +305,7 @@ p {
         width: 197px;
     }
 
-    .navbar-main-menu ul {
+    .navbar-main-menu-text ul {
         display: none;
     }
 
@@ -528,7 +529,7 @@ p {
         width: 197px;
     }
 
-    .navbar-main-menu ul {
+    .navbar-main-menu-text ul {
         display: none;
     }
 
@@ -735,18 +736,20 @@ p {
         width: 130px;
     }
 
-    .navbar-main-menu {
+    .navbar-main-menu,
+    .navbar-main-menu-text {
         width: 55vw;
         display: flex;
         justify-content: center;
     }
 
-    .navbar-main-menu ul {
+    .navbar-main-menu ul,
+    .navbar-main-menu-text ul {
         display: flex;
         align-items: center;
         gap: 75px;
     }
-
+    
     .navbar-icons {
         width: 20vw;
     }

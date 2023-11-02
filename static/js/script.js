@@ -3,7 +3,7 @@ function openNav() {
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.left = "-35vw";
+    document.getElementById("mySidenav").style.left = "-100%";
   }
 
-  
+ 
