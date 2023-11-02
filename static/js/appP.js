@@ -10,9 +10,11 @@
         e.preventDefault();
         if(e.target.classList.contains('boton')){
             const productoSeleccionado = e.target.parentElement.parentElement.parentElement;
-            leerProducto(productoSeleccionado)
+            leerProducto(productoSeleccionado);
         }
     }
+
+    
 
     function leerProducto(Producto){
         const precio= Producto.querySelector("p").textContent;
@@ -23,7 +25,7 @@
             id: Producto.querySelector("button").getAttribute("data-id"),
             cantidad:1
         }       
-        agregarInfo(infoPrecio);   
+        guardarInfo(infoPrecio);   
     }
 
 // -----------Ingreso de datos al localstorage------------------
@@ -38,10 +40,20 @@
         return info;
     }
 
-    function agregarInfo(product){
-        const Informacion = traerInfo();
-        Informacion.push(product);
-        localStorage.setItem('datoProducto',JSON.stringify(Informacion) )
+    function guardarInfo(producto) {
+        const productos = traerInfo();
+        const existe = productos.some(prod => prod.id === producto.id);
+        if (existe) {
+            productos.forEach(prod => {
+                if (prod.id === producto.id) {
+                    prod.cantidad++;
+                }
+            });
+        } else {
+            producto.cantidad = 1;
+            productos.push(producto);
+        }
+        localStorage.setItem('datoProducto', JSON.stringify(productos));
     }
 
     // -----------Llamar del localstorage------------------
@@ -49,13 +61,13 @@
     function mostrarProducto(){
         const productos= traerInfo();
         productos.forEach((infoPrecio)=>agregarProductoCarrito(infoPrecio))
+        
+        // solo se ejecuta cunado se borra el producto 
         const elementos = document.querySelectorAll("#product-list > tr .delete")
         for(let i=0; i<elementos.length; i++){
             elementos[i].addEventListener('click',(e)=>{
                 const pruebaID= e.target.parentElement.parentElement.id
-                console.log(pruebaID);
                 const prueba = productos.filter((producto)=>producto.id != pruebaID);
-                console.log(prueba);
                 localStorage.setItem('datoProducto', JSON.stringify(prueba));
                 window.location.reload();
             })
@@ -65,7 +77,6 @@
     
     function agregarProductoCarrito(infoPrecio){
         const lista = document.querySelector("#product-list");
-        console.log(lista);
         const fila=document.createElement('tr');
         fila.id=infoPrecio.id;
         fila.innerHTML=`
@@ -94,4 +105,18 @@
 
 
 
-
+    // function guardarInfo(producto) {
+    //     const productos = traerInfo();
+    //     const existe = productos.some(prod => prod.id === producto.id);
+    //     if (existe) {
+    //         productos.forEach(prod => {
+    //             if (prod.id === producto.id) {
+    //                 prod.cantidad++;
+    //             }
+    //         });
+    //     } else {
+    //         producto.cantidad = 1;
+    //         productos.push(producto);
+    //     }
+    //     localStorage.setItem('datoProducto', JSON.stringify(productos));
+    // }
