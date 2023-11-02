@@ -106,8 +106,14 @@ p {
     cursor: pointer;
 }
 
-.navbar-main-menu ul li .dropbtn::after,
-.navbar-main-menu ul li .dropbtn::before {
+.navbar-main-menu{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-main-menu-text ul li .dropbtn::after,
+.navbar-main-menu-text ul li .dropbtn::before {
     display: block;
     content: '';
     border-bottom: solid .2rem #c08d3e;
@@ -117,7 +123,7 @@ p {
 
 
 
-.navbar-main-menu ul li .dropbtn:hover::after {
+.navbar-main-menu-text ul li .dropbtn:hover::after {
     transform: scaleX(1);
 }
 
@@ -163,8 +169,8 @@ p {
     color: black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border: solid 2px grey;
-    right: 11%;
-    top: 12%;
+    /* right: 11%;
+    top: 12%; */
 }
 
 .carrito-content::-webkit-scrollbar{
@@ -183,12 +189,12 @@ p {
 }
 .carrito-content th{
     font-size: 1.4rem;
-    width: 6vw;
+    width: 65px;
 }
 
-.carrito-push{
+/* .carrito-push{
     margin-left: 25vw;
-}
+} */
 
 
 .navbar-main-menu ul li:hover .carrito-content{
@@ -291,14 +297,14 @@ p {
     }
 
     .sidenav-container {
-        width: 10vw;
+        width: 20vw;
     }
 
     .image-container {
         align-items: center;
         justify-content: center;
         display: flex;
-        width: 80vw;
+        width: 60vw;
     }
 
     .image-container img {
@@ -325,6 +331,11 @@ p {
     .navbar-icons-car img {
         width: 60px;
         height: 40px
+    }
+
+    .carrito-content{
+        right: 8%;
+        top: 19%;
     }
 
     /*========================end_header========================*/
@@ -388,31 +399,48 @@ p {
 
     /*================Section_final========================*/
 
-    .final-section-img {
+    .final-section-img{
+        background-image: url(../imagenes/section-final2.jpg);
+    }
+
+    .final-section-img2{
+        background-image: url(../imagenes/section-final.jpg);
+    }
+
+    .final-section-img,
+    .final-section-img2 {
         width: 100%;
         height: 42vh;
         max-width: 100%;
         display: flex;
         align-items: center;
-        background-image: url(../imagenes/section-final2.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
     }
 
-    .final-section-text {
+    .final-section-text{
+        background-color: #1e0102;
+    }
+
+    .final-section-text2{
+        background-color: #071433;
+    }
+    
+    .final-section-text,
+    .final-section-text2 {
         width: 41vw;
         height: 24vw;
         display: flex;
         align-items: center;
         margin-left: 3px;
-        background-color: #1e0102;
         color: #b6b8b8;
         font-size: 1.5rem;
         border-radius: 35px;
     }
 
-    .final-section-text p {
+    .final-section-text p,
+    .final-section-text2{
         text-align: center;
     }
 
@@ -515,11 +543,11 @@ p {
     }
 
     .sidenav-container {
-        width: 10vw;
+        width: 20vw;
     }
 
     .image-container {
-        width: 80vw;
+        width: 60vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -549,6 +577,11 @@ p {
     .navbar-icons-car img {
         width: 60px;
         height: 40px
+    }
+
+    .carrito-content{
+        right: 8%;
+        top: 19%;
     }
 
     /*========================end_header========================*/
@@ -612,31 +645,48 @@ p {
 
     /*================Section_final========================*/
 
-    .final-section-img {
+    .final-section-img{
+        background-image: url(../imagenes/section-final2.jpg);
+    }
+
+    .final-section-img2{
+        background-image: url(../imagenes/section-final.jpg);
+    }
+
+    .final-section-img,
+    .final-section-img2 {
         width: 100%;
         height: 42vh;
         max-width: 100%;
         display: flex;
         align-items: center;
-        background-image: url(../imagenes/section-final2.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
     }
 
-    .final-section-text {
+    .final-section-text{
+        background-color: #1e0102;
+    }
+
+    .final-section-text2{
+        background-color: #071433;
+    }
+    
+    .final-section-text,
+    .final-section-text2 {
         width: 41vw;
         height: 24vw;
         display: flex;
         align-items: center;
         margin-left: 3px;
-        background-color: #1e0102;
         color: #b6b8b8;
         font-size: 1.5rem;
         border-radius: 35px;
     }
 
-    .final-section-text p {
+    .final-section-text p,
+    .final-section-text2 p{
         text-align: center;
     }
 
@@ -725,22 +775,25 @@ p {
 
     .navbar-content {
         justify-content: space-between;
-        height: 100%;
+
     }
 
     .image-container {
-        width: 25vw;
+        width: 20vw;
     }
 
     .image-container img {
         width: 130px;
     }
 
-    .navbar-main-menu,
+    .navbar-main-menu{
+        width: 20vw;
+    }
+
     .navbar-main-menu-text {
-        width: 55vw;
+        width: 60vw;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .navbar-main-menu ul,
@@ -756,6 +809,11 @@ p {
 
     .container-icon-car {
         display: flex;
+    }
+
+    .carrito-content{
+        right: 10%;
+        top: 13.5%;
     }
 
     /*========================end_header========================*/
@@ -780,7 +838,8 @@ p {
 
     /*================Section_final========================*/
 
-    .final-section-text {
+    .final-section-text,
+    .final-section-text2 {
         height: 15vw;
         display: flex;
         justify-content: center;
@@ -821,13 +880,17 @@ p {
 
     .navbar-main-menu {
         justify-content: flex-start;
-        width: 45vw;
+        width: 25vw;
     }
 
     .navbar-icons {
         justify-content: center;
     }
 
+    .carrito-content{
+        right: 17%;
+        top: 13.5%;
+    }
     /*========================end_header========================*/
 
     /*================Section_search========================*/
@@ -854,7 +917,8 @@ p {
 
     /*================Section_final========================*/
 
-    .final-section-text {
+    .final-section-text,
+    .final-section-text2 {
         height: 7vw;
     }
 
@@ -892,6 +956,10 @@ p {
     .carousel-item-two,
     .carousel-item-three {
         height: 40rem;
+    }
+    .carrito-content{
+        right: 19%;
+        top: 13.5%;
     }
 
     /*================Section_carrusel========================*/
